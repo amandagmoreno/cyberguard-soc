@@ -230,7 +230,7 @@ function LiveLogs() {
 
 useEffect(() => {
 
-  const socket = new WebSocket("ws://127.0.0.1:8000/ws/logs");
+  const socket = new WebSocket("wss://cyberguard-soc-e6si.onrender.com/ws/logs");
 
   socket.onmessage = (event) => {
 
@@ -327,11 +327,11 @@ function ActiveIncidentsPanel() {
   const [timeline, setTimeline] = useState<any[]>([]);
   useEffect(() => {
 
-    fetch("http://127.0.0.1:8000/incidents")
+    fetch("https://cyberguard-soc-e6si.onrender.com/incidents")
       .then((res) => res.json())
       .then((data) => setIncidents(data));
 
-    fetch("http://127.0.0.1:8000/timeline")
+    fetch("https://cyberguard-soc-e6si.onrender.com/timeline")
       .then((res) => res.json())
       .then((data) => setTimeline(data));
 
@@ -1260,8 +1260,8 @@ export default function DashboardPage() {
     try {
 
       const response = await fetch(
-        "http://127.0.0.1:8000/metrics"
-      );
+       "https://cyberguard-soc-e6si.onrender.com/metrics"
+);
 
       const data = await response.json();
 
@@ -1279,7 +1279,7 @@ export default function DashboardPage() {
   try {
 
     const response = await fetch(
-      "http://127.0.0.1:8000/risk-advisor"
+      "https://cyberguard-soc-e6si.onrender.com/risk-advisor"
     );
 
     const data = await response.json();
@@ -1299,7 +1299,7 @@ export default function DashboardPage() {
     try {
 
       const response = await fetch(
-        "http://127.0.0.1:8000/correlations"
+        "https://cyberguard-soc-e6si.onrender.com/correlations"
       );
 
       const data = await response.json();
@@ -1318,7 +1318,7 @@ export default function DashboardPage() {
     try {
 
       const response = await fetch(
-        "http://127.0.0.1:8000/timeline"
+        "https://cyberguard-soc-e6si.onrender.com/timeline"
       );
 
       const data = await response.json();
@@ -1337,7 +1337,7 @@ export default function DashboardPage() {
   try {
 
     const response = await fetch(
-      "http://127.0.0.1:8000/prediction"
+      "https://cyberguard-soc-e6si.onrender.com/prediction"
     );
 
     const data = await response.json();
@@ -1357,7 +1357,7 @@ export default function DashboardPage() {
   try {
 
     const response = await fetch(
-      "http://127.0.0.1:8000/threat-analysis"
+      "https://cyberguard-soc-e6si.onrender.com/threat-analysis"
     );
 
     const data = await response.json();
@@ -1385,7 +1385,7 @@ export default function DashboardPage() {
   try {
 
     const response = await fetch(
-      "http://127.0.0.1:8000/responses"
+      "https://cyberguard-soc-e6si.onrender.com/responses"
     );
 
     const data = await response.json();
