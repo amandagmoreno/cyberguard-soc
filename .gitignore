@@ -1,0 +1,7 @@
+backend/cyberguard.db
+backend/venv/
+backend/__pycache__/
+
+frontend/.next/
+
+node_modules/
