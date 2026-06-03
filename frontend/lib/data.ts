@@ -10,12 +10,12 @@ export const INCIDENTS: Incident[] = [
 ];
 
 export const AGENTS: Agent[] = [
-  { name:"ThreatHunter",      role:"Agente Autônomo", status:"ACTIVE",     color:"#10B981", tasks:14 },
-  { name:"LogAnalyzer",       role:"Agente Autônomo", status:"PROCESSING", color:"#EAB308", tasks:847 },
-  { name:"RiskEngine",        role:"Agente Autônomo", status:"ACTIVE",     color:"#10B981", tasks:31 },
-  { name:"IncidentResponder", role:"Agente Autônomo", status:"ALERT",      color:"#EF4444", tasks:4 },
-  { name:"CorrelationBot",    role:"Agente Autônomo", status:"ACTIVE",     color:"#10B981", tasks:122 },
-  { name:"ThreatPredictor",   role:"Agente Autônomo", status:"IDLE",       color:"#3D5070", tasks:0 },
+  { name:"ThreatHunter",      role:"Agente Autônomo", status:"ATIVO",     color:"#10B981", tasks:14 },
+  { name:"LogAnalyzer",       role:"Agente Autônomo", status:"PROCESSANDO", color:"#EAB308", tasks:847 },
+  { name:"RiskEngine",        role:"Agente Autônomo", status:"ATIVO",     color:"#10B981", tasks:31 },
+  { name:"IncidentResponder", role:"Agente Autônomo", status:"ALERTA",      color:"#EF4444", tasks:4 },
+  { name:"CorrelationBot",    role:"Agente Autônomo", status:"ATIVO",     color:"#10B981", tasks:122 },
+  { name:"ThreatPredictor",   role:"Agente Autônomo", status:"OCIOSO",       color:"#3D5070", tasks:0 },
 ];
 
 export const LOG_POOL: LogLine[] = [
